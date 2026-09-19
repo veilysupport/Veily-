@@ -209,4 +209,4 @@ Support
 
 - Telegram Support: @veilysupport
 - Info Bot: @veilyinfo_bot
-- Channel: @veily_app
+- Channel: [@veily_app](https://t.me/veily_app)
