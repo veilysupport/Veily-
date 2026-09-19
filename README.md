@@ -176,7 +176,6 @@ Privacy & Data
 
 All configurations, profiles, and rules are stored locally on your device. Veily does not upload, sync, or transmit any configuration data to external servers.
 
-Note: Back up your data regularly using the ".veily" export. Uninstalling Veily or clearing its app data will permanently delete locally stored profiles and settings.
 
 ---
 
@@ -197,11 +196,9 @@ Requirements
 Installation
 
 1. Install the Veily APK.
-2. Set up Magisk or KernelSU.
-3. Install and activate LSPosed.
-4. Enable Veily within LSPosed.
-5. Add target applications to Veily's LSPosed scope.
-6. Open Veily and configure profiles, hooks, and rules.
+2. Enable Veily within LSPosed.
+3. Add target applications to Veily's LSPosed scope.
+4. Open Veily and configure profiles, hooks, and rules.
 
 ---
 
@@ -214,7 +211,7 @@ Support
 
 
 
-
+---
 
 
 
