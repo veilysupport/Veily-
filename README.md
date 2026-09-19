@@ -207,6 +207,6 @@ Installation
 
 Support
 
-- Telegram Support: @veilysupport
-- Info Bot: @veilyinfo_bot
+- Telegram Support: [@veilysupport](https://t.me/veilysupport)
+- Info Bot: [@veilyinfo_bot](https://t.me/veilyinfo_bot)
 - Channel: [@veily_app](https://t.me/veily_app)
