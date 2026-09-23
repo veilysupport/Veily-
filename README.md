@@ -1,10 +1,12 @@
-Veily — Advanced Device Environment & Privacy Manager
+# Veily — Advanced Device Environment & Privacy Manager
 
-Veily is a professional-grade device environment and privacy management utility for rooted Android, built on the Xposed/LSPosed framework. It gives you precise, per-application control over how device hardware, system, network, telephony, and regional identifiers are presented to any installed app.
+**Professional-grade device environment & privacy manager for rooted Android**
+
+Veily is built on the **Xposed / LSPosed** framework and gives you precise **per-app control** over device hardware, system, telephony, network, and regional identifiers.
 
 ---
 
-Device & System Hooks
+## 🛠 Device & System Hooks
 
 - Android ID
 - App Set ID
@@ -14,30 +16,24 @@ Device & System Hooks
 - Boot ID
 - Anonymous App ID (AAID)
 - Device Model
-- Manufacturer
-- Brand
+- Manufacturer & Brand
 - OS Version
 - Build Information
 - Build Fingerprint
-- Hardware Information
-- Board Information
-- Display Information
+- Hardware / Board / Display Information
 - Hardware Serial
 - Developer Options / Developer State
 
 ---
 
-Telephony & SIM Hooks
+## 📱 Telephony & SIM Hooks
 
-- IMEI
-- IMSI
-- MEID
-- SIM Serial / ICCID
+- IMEI, IMSI, MEID
+- SIM Serial (ICCID)
 - Subscriber ID
 - Phone Number
 - Voicemail Number
-- SIM Country
-- SIM Operator
+- SIM Country & Operator
 - MCC / MNC
 - Carrier Network
 - Country ISO / Region
@@ -45,105 +41,109 @@ Telephony & SIM Hooks
 
 ---
 
-Wi-Fi & Connectivity Hooks
+## 📶 Wi-Fi & Connectivity
 
 - Wi-Fi MAC Address
-- BSSID
-- SSID
+- BSSID & SSID
 - Bluetooth MAC Address
-- Carrier and Network Information
+- Carrier & Network Information
 
 ---
 
-Country Profiles
+## 🌍 Country Profiles
 
-Apply a complete regional environment through one profile:
+Apply a complete regional environment with one profile:
 
 - Country & Region
 - Timezone
-- Currency & Currency Symbol
+- Currency & Symbol
+- Locale & Language
+- Date Format
 - SIM Country
 - MCC / MNC
 - International Dialing Code
-- Locale & Language
-- Date Format
-- Related country-specific settings
+- Country-specific settings
 
 ---
 
-Location
+## 📍 Location
 
-- Custom latitude and longitude
-- Country/region-based location configuration
-- Interactive map with pan and zoom
-- Apply individually or through App Groups
-
----
-
-Multi-Profile System
-
-Create multiple independent profiles per application — each with its own device environment, country settings, location, and rules — and switch between them instantly.
+- Custom Latitude & Longitude
+- Region-based location configuration
+- Interactive map with pan & zoom
+- Individual or App Group support
 
 ---
 
-App Groups & Batch Management
+## 🔄 Multi-Profile System
 
-Organize multiple applications into groups and apply the following in one tap:
+Create multiple independent profiles for each app, each with its own device environment, country, location, hooks, and rules.
 
-- Device profiles
-- Country profiles
-- GPS coordinates
-- Configuration rules
-
-Groups can be exported and restored as a single ".veily" archive.
+**Switch between profiles instantly.**
 
 ---
 
-App Backup & Restore
+## 📦 App Groups & Batch Management
 
-A ".veily" backup can include:
+Apply to multiple applications in one tap:
 
-- Device profile
-- App data
-- Internal CE data
-- Device-protected / DE storage
-- External "/sdcard/Android/data"
-- Runtime permissions
+- Device Profiles
+- Country Profiles
+- GPS Coordinates
+- Configuration Rules
 
-Runtime permissions are automatically restored when included in the backup.
-
-Additional controls: Force Stop, Clear App Data.
+Groups can be exported and restored as a single **`.veily`** archive.
 
 ---
 
-Anti-Fingerprinting
+## 💾 Backup & Restore
 
-Veily covers 50+ device and environment signals to help prevent device fingerprinting and hardware profiling by target applications. All spoofed values are internally consistent across related hardware, system, and build properties to avoid cross-signal contradictions.
+A `.veily` backup can include:
 
----
+- Device Profile
+- App Data
+- Internal CE Data
+- Device-Protected (DE) Storage
+- `/sdcard/Android/data`
+- Runtime Permissions
 
-Privacy & Detection Controls
+Additional tools:
 
-- Xposed Concealment — Hides installed Xposed/LSPosed modules from target applications.
-- Hide Root Detection — Suppresses root-related indicators from target app visibility.
-- Hide Developer Options — Hides developer state and related checks from target applications.
-- Installation Source Spoofing — Reports Google Play Store as the install source to target applications.
-
----
-
-Device Presets
-
-800+ authentic device presets with genuine specifications, hardware info, board details, display properties, and certified build fingerprints across a wide range of manufacturers and models.
+- Force Stop
+- Clear App Data
 
 ---
 
-Randomization Engine
+## 🛡 Anti-Fingerprinting
 
-Generates randomized device environments while maintaining property consistency — designed to prevent mismatched combinations between related device attributes.
+Veily helps prevent **device fingerprinting** by spoofing **50+ device and environment signals** used by applications to build a unique device fingerprint.
+
+All spoofed values remain internally consistent across related hardware, system, and build properties to minimize cross-signal mismatches.
 
 ---
 
-RAM & Storage Emulation
+## 🔒 Privacy & Detection Controls
+
+- Xposed Concealment
+- Hide Root Detection
+- Hide Developer Options
+- Installation Source Spoofing (Reports Google Play Store)
+
+---
+
+## 📚 Device Presets
+
+**800+ authentic device presets** with genuine specifications, hardware information, board details, display properties, and certified build fingerprints.
+
+---
+
+## 🎲 Randomization Engine
+
+Generate realistic randomized device environments while maintaining cross-property consistency across related properties.
+
+---
+
+## 💽 RAM & Storage Emulation
 
 - Total RAM
 - Available RAM
@@ -152,112 +152,110 @@ RAM & Storage Emulation
 
 ---
 
-Per-App Control
+## ⚙️ Per-App Control
 
 Every target application maintains its own independent:
 
-- Device environment
-- Country profile
+- Device Environment
+- Country Profile
 - Location
 - Hooks
-- Detection controls
-- Backup configuration
-- Profile settings
+- Detection Controls
+- Backup Configuration
+- Profile Settings
 
 ---
 
-Interface
+## 🌑 Interface
 
-Modern dark-themed UI built on the Cosmic Noir design system.
-
----
-
-Privacy & Data
-
-All configurations, profiles, and rules are stored locally on your device. Veily does not upload, sync, or transmit any configuration data to external servers.
-
+Modern dark-themed UI built on the **Cosmic Noir** design system.
 
 ---
 
-Access
+## 🔐 Privacy & Data
 
-Veily is a paid application. A trial period is available before purchase.
+All configurations, profiles, and rules are stored **locally** on your device.
+
+**Veily does not upload, sync, or transmit configuration data to external servers.**
 
 ---
 
-Requirements
+# 💎 Access
 
-- Rooted Android device
-- Magisk or KernelSU , Apatch
+Veily is a **paid application**. A trial period is available before purchase.
+
+---
+
+# ✅ Requirements
+
+- Rooted Android Device
+- Magisk / KernelSU / APatch
 - LSPosed
 
 ---
 
-Installation
+# 🚀 Installation
 
 1. Install the Veily APK.
-2. Enable Veily within LSPosed.
+2. Enable Veily inside LSPosed.
 3. Add target applications to Veily's LSPosed scope.
-4. Open Veily and configure profiles, hooks, and rules.
+4. Configure profiles, hooks, and rules.
 
 ---
 
-Support
+# 💬 Support
 
-- Telegram Support: [@veilysupport](https://t.me/veilysupport)
-- Info Bot: [@veilyinfo_bot](https://t.me/veilyinfo_bot)
-- Channel: [@veily_app](https://t.me/veily_app)
-
-
-
+- **Telegram:** @veilysupport
+- **Info Bot:** @veilyinfo_bot
+- **Channel:** @veily_app
 
 ---
 
+# End User License Agreement (EULA)
 
-
-END USER LICENSE AGREEMENT (EULA)
-
-PLEASE READ THIS AGREEMENT CAREFULLY BEFORE INSTALLING OR USING VEILY. BY INSTALLING, ACCESSING, OR USING THIS SOFTWARE, YOU AGREE TO BE BOUND BY THE TERMS OF THIS AGREEMENT. IF YOU DO NOT AGREE, DO NOT INSTALL OR USE THIS SOFTWARE.
+> **Please read this agreement carefully before installing or using Veily.** By installing, accessing, or using the software, you agree to these terms.
 
 ---
 
-1. LICENSE
+## 1. License
 
-VEILY IS A PAID APPLICATION. A FREE TRIAL IS PROVIDED TO ALLOW YOU TO EVALUATE THE SOFTWARE BEFORE MAKING A PURCHASE. WE STRONGLY ENCOURAGE YOU TO USE THE TRIAL PERIOD TO ENSURE THE SOFTWARE MEETS YOUR REQUIREMENTS BEFORE PURCHASING A LICENSE.
-
----
-
-2. PAYMENT & REFUND POLICY
-
-ALL PURCHASES ARE FINAL. ONCE A LICENSE HAS BEEN PURCHASED, NO REFUNDS WILL BE ISSUED UNDER ANY CIRCUMSTANCES. BY COMPLETING A PURCHASE, YOU ACKNOWLEDGE THAT YOU HAVE EVALUATED THE SOFTWARE USING THE AVAILABLE TRIAL PERIOD AND ACCEPT THIS NO-REFUND POLICY.
+Veily is a paid application. A free trial is provided so you can evaluate the software before purchasing.
 
 ---
 
-3. INTENDED USE
+## 2. Payment & Refund Policy
 
-VEILY IS DEVELOPED EXCLUSIVELY FOR LEGITIMATE PRIVACY PROTECTION AND PERSONAL USE PURPOSES. THE SOFTWARE IS INTENDED TO HELP USERS MANAGE THEIR DEVICE ENVIRONMENT, PROTECT THEIR PRIVACY, AND CONTROL HOW APPLICATIONS ACCESS DEVICE INFORMATION.
+**All purchases are final.**
 
-THIS SOFTWARE MUST NOT BE USED TO:
-
-- VIOLATE ANY APPLICABLE LOCAL, NATIONAL, OR INTERNATIONAL LAWS OR REGULATIONS
-- DECEIVE, DEFRAUD, OR HARM ANY INDIVIDUAL, ORGANIZATION, OR PLATFORM
-- BREACH THE TERMS OF SERVICE OF ANY APPLICATION OR PLATFORM
-- ENGAGE IN ANY UNAUTHORIZED, MALICIOUS, OR ILLEGAL ACTIVITY
+No refunds will be issued after a license purchase. Please use the trial period to evaluate compatibility before buying.
 
 ---
 
-4. USER RESPONSIBILITY
+## 3. Intended Use
 
-THE USER IS SOLELY AND ENTIRELY RESPONSIBLE FOR HOW THEY CHOOSE TO USE THIS SOFTWARE. THE AUTHOR AND DEVELOPER OF VEILY SHALL NOT BE HELD RESPONSIBLE OR LIABLE FOR ANY MISUSE, DAMAGES, LEGAL CONSEQUENCES, OR HARM ARISING FROM THE USE OR MISUSE OF THIS SOFTWARE. BY USING VEILY, YOU ACCEPT FULL RESPONSIBILITY FOR YOUR ACTIONS.
+Veily is developed exclusively for legitimate privacy protection and personal use.
+
+**This software must not be used to:**
+
+- Violate any applicable laws or regulations
+- Deceive, defraud, or harm individuals or organizations
+- Breach the Terms of Service of any application or platform
+- Engage in unauthorized or illegal activities
 
 ---
 
-5. DISCLAIMER OF WARRANTIES
+## 4. User Responsibility
 
-THE SOFTWARE IS PROVIDED ON AN AS-IS AND AS-AVAILABLE BASIS. TO THE FULLEST EXTENT PERMITTED BY LAW, THE AUTHOR DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+The user is solely responsible for how Veily is used. The developer shall not be liable for misuse, damages, or legal consequences arising from the use of this software.
 
 ---
 
-6. LIMITATION OF LIABILITY
+## 5. Disclaimer of Warranties
 
-IN NO EVENT SHALL THE AUTHOR OR DEVELOPER BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES ARISING FROM THE USE OR INABILITY TO USE THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+Veily is provided **"AS IS"** and **"AS AVAILABLE"**, without express or implied warranties, including merchantability, fitness for a particular purpose, or non-infringement.
+
+---
+
+## 6. Limitation of Liability
+
+The author and developer shall not be liable for any direct, indirect, incidental, special, or consequential damages resulting from the use or inability to use Veily.
